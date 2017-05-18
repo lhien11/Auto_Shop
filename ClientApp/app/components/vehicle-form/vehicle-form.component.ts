@@ -20,6 +20,9 @@ export class VehicleFormComponent implements OnInit {
 
     this.vehicleService.getFeatures().subscribe(features => 
       this.features = features);
+
+    this.vehicleService.getVehicles().subscribe(vehicle => 
+      this.vehicle = vehicle);
   }
 
   onMakeChange() {
